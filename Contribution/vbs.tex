@@ -59,7 +59,7 @@
 \author{
 Ansgar Denner$^{1\,}$\footnote{E-mail:
   \texttt{ansgar.denner@physik.uni-wuerzburg.de}},
-Mathieu Pellen$^{1\,}$\footnote{E-mail:
+Mathieu Pellen$^{1\,, 2\,}$\footnote{E-mail:
   \texttt{mathieu.pellen@physik.uni-wuerzburg.de}},
 Michael Rauch
 \\[9mm]
@@ -69,6 +69,9 @@ $^1$Universit\"at W\"urzburg, %
 {\small\it Emil-Hilb-Weg 22, \linebreak %
         97074 W\"urzburg, %
         Germany}\\[3mm]
+{\small\it
+$^2$University of Cambridge, Cavendish Laboratory,} \\ %
+{\small\it Cambridge CB3 0HE, United Kingdom}\\[3mm]
 }
 
 \maketitle
@@ -88,35 +91,47 @@ $^1$Universit\"at W\"urzburg, %
 
 \section{Introduction}
 
-The measurements of vector-boson scattering (VBS) processes are one of the most important in the future Large Hadron Collider (LHC) program.
-In particular, given the foreseen experimental precision, very precise measurements will be performed.
-This offers great opportunities to the probe the electroweak (EW) sector and its associated symmetry breaking mechanism
-(see Refs.~\cite{Mangano:2016jyj,Goncalves:2017gzy,Jager:2017owh} for $100\TeV$ colliders studies).
-Therefore it is of prime importance to estimate precisely theoretical predictions for the future operation of the LHC.
-In this contribution, predictions for NLO QCD and EW corrections are provided for the LHC running in its high luminosity configuration (HL) and high energy (HE) configurations.
-The HL set-up corresponds to a centre-of-mass energy of $14\TeV$ while the HE one is of $27\TeV$.
-For both centre-of-energy the same type of event selections have been used.
-These predictions represent important benchmarks as they indicates the expected rates and the corresponding theoretical uncertainties.
-For QCD corrections, they are very important as they can significantly distort the shape of jet-related observables \cite{Jager:2006zc,Jager:2006cp,Bozzi:2007ur,Jager:2009xx,Jager:2011ms,Denner:2012dz,Rauch:2016pai,Biedermann:2017bss,Ballestrero:2018anz}.
-In addition, the inclusion of NLO QCD corrections allow for more precise predictions as it reduces the theoretical uncertainties.
-Concerning NLO EW, they have been showed to be very large for VBS processes \cite{Biedermann:2016yds} and even the dominating NLO contribution for same-sign WW scattering \cite{Biedermann:2017bss}.
+The measurement of vector-boson scattering (VBS) processes is one of
+the most important tasks in the future Large Hadron Collider (LHC) program.
+The expected experimental precision allows precise measurements.
+This offers great opportunities to probe the electroweak (EW) sector and its associated symmetry breaking mechanism
+(see Refs.~\cite{Mangano:2016jyj,Goncalves:2017gzy,Jager:2017owh} for $100\TeV$-collider studies).
+Therefore, it is of prime importance to make precise theoretical
+predictions available for the future operation of the LHC.
+In this contribution, predictions for NLO QCD and EW corrections are provided for the LHC running in its high-luminosity (HL) and high-energy (HE) configurations.
+The HL set-up corresponds to a centre-of-mass energy of $14\TeV$ while
+the HE one refers to $27\TeV$.
+For both centre-of-mass energies the same type of event selections has been used.
+These predictions represent important benchmarks as they indicate the expected rates and the corresponding theoretical uncertainties.
+The QCD corrections are particularly important as they can significantly distort the shape of jet-related observables \cite{Jager:2006zc,Jager:2006cp,Bozzi:2007ur,Jager:2009xx,Jager:2011ms,Denner:2012dz,Rauch:2016pai,Biedermann:2017bss,Ballestrero:2018anz}.
+In addition, the inclusion of NLO QCD corrections reduces the theoretical uncertainties.
+The NLO EW corrections have been shown to be very large for VBS processes \cite{Biedermann:2016yds} and even the dominating NLO contribution for same-sign WW scattering \cite{Biedermann:2017bss}.
 
-The NLO QCD corrections have been obtained from \cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} in the so-called VBS approximation \cite{Ballestrero:2018anz}.
-The NLO EW corrections have been obtained from MoCaNLO+Recola \cite{Bendavid:2018nar,Actis:2016mpe,Actis:2016mpe} in the full computation.
-The differences between the full computation and the VBS approximated one have been found to be below the per-cent level \cite{Ballestrero:2018anz}.
-This justifies the combination of this two types of corrections.
-The QCD corrections have been computed for all possible VBS signatures while the EW ones have been restricted to the same-sign WW scattering.
-This is justified given the fact that it constitutes a representative channel.
-While the exact value of the corrections is expected to be different for other signatures, it is expected that their magnitudes and nature will be identical.
+In this study, the NLO QCD corrections have been obtained based on Refs.~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} in the so-called VBS approximation \cite{Oleari:2003tc,Denner:2012dz,Ballestrero:2018anz}.
+The NLO EW corrections have been obtained from {\sc MoCaNLO+Recola}
+\cite{Bendavid:2018nar,Actis:2016mpe,Actis:2016mpe} based on a
+full NLO computation \cite{Biedermann:2017bss}.
+The differences between the full computation and the one based on the
+VBS approximation have been found to be below the per-cent level at
+NLO QCD \cite{Ballestrero:2018anz}.
+This justifies the combination of the NLO corrections from these two types of calculations.
+The QCD corrections have been computed for all possible VBS signatures, while the EW ones are only known for same-sign WW scattering.
+While the exact value of the corrections is expected to be different
+for other signatures, their magnitudes and nature should be similar.
 
 \section{Set-up}
 
-The hadronic scattering processes are simulated at the LHC with a centre-of-mass energy $\sqrt s = 14 \TeV$ and $\sqrt s = 27 \TeV$.
-    The NNNPDF~3.1 luxQED parton distribution functions~(PDFs)~\cite{Bertone:2017bme} with five massless flavours,\footnote{For the process considered, no bottom (anti-)quarks appear in the initial or final state at LO and NLO, as they would lead to top quarks, and not light jets, in the final state.} 
+The hadronic scattering processes are simulated at the LHC with a centre-of-mass energies $\sqrt s = 14 \TeV$ and $\sqrt s = 27 \TeV$.
+    The NNNPDF~3.1 LUXQED parton distribution
+    functions~(PDFs)~\cite{Bertone:2017bme} with five massless
+    flavours,\footnote{For the process considered, no bottom
+      (anti-)quarks appear in the initial or final state at LO and
+      NLO, as they would lead to top quarks rather than light jets in the final state.} 
     NLO-QCD evolution, and a strong coupling constant $\alphas\left( \MZ \right) = 0.118$ are employed.\footnote{The corresponding identifier {\tt lhaid} in the program LHAPDF6~\cite{Buckley:2014ana} is 324900.}
-    Initial-state collinear singularities are factorised according to the ${\overline{\rm MS}}$ scheme, consistently with what is done in the NNPDF set.
+    Initial-state collinear singularities are factorised according to
+    the ${\overline{\rm MS}}$ scheme, consistently with the conventions in the NNPDF set.
 
-    For the rest of the input parameters, they have been chosen as in Ref.~\cite{Ballestrero:2018anz}.
+ The other input parameters have been chosen as in Ref.~\cite{Ballestrero:2018anz}.
     For the massive particles, the following masses and decay widths are used:
     %
     \begin{alignat}{2}
@@ -135,7 +150,7 @@ The hadronic scattering processes are simulated at the LHC with a centre-of-mass
     \end{split}
     \end{equation}
     %
-    The EW coupling is renormalised in the $G_\mu$ scheme \cite{Denner:2000bj} according to 
+    The EW coupling is fixed in the $G_\mu$ scheme \cite{Denner:2000bj} according to 
     \begin{equation}
     \alpha =  \frac{\sqrt{2}}{\pi} G_{\mu} M_{\rm W}^2 \left(1-\frac{M_{\rm W}^2}{M_{\rm Z}^2} \right),
     \end{equation}
@@ -145,8 +160,8 @@ The hadronic scattering processes are simulated at the LHC with a centre-of-mass
         G_{\mu}    = 1.16637\times 10^{-5}\GeV^{-2},
     \end{equation}
     %
-    and where $M_V^2$ corresponds to the real part of the squared pole mass.
-    The numerical value of $\alpha$, corresponding to the choice of input parameters is
+    and $M_V^2$ corresponds to the real part of the squared pole mass.
+    The numerical value of $\alpha$ corresponding to this choice of input parameters is
     %
     \begin{equation}
      1/\alpha = 132.3572\ldots\,.
@@ -161,13 +176,15 @@ The hadronic scattering processes are simulated at the LHC with a centre-of-mass
      \mu_{\rm ren} = \mu_{\rm fac} = \sqrt{p_{\rm T, j_1}\, p_{\rm T, j_2}} .
     \end{equation}
     %
-    The transverse momenta are the ones of the two hardest jets.
+    The transverse momenta are those of the two hardest jets.
     This choice of scale has been shown to provide stable NLO-QCD predictions \cite{Denner:2012dz}.
 
     Following experimental measurements \cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan:2014sta,CMS:2017adb} and prospect studies \cite{ATL-PHYS-PUB-2017-023}, the event selection used in the present study is:
 
     \begin{itemize}
-        \item The two same-sign charged leptons are required to fulfil cuts on transverse momentum, rapidity, and separation in the rapidity--azimuthal-angle separation, 
+        \item The two same-sign charged leptons are required to fulfil
+          cuts on transverse momentum, rapidity, separation in the
+          rapidity--azimuthal-angle, and the lepton-pair invariant mass, 
             \begin{align}
             \label{cut:1}
              \ptsub{\Pl} >  20\GeV,\qquad |y_{\Pl}| < 4.0, \qquad \Delta R_{\Pl\Pl}> 0.3, \qquad m_{\Pl\Pl}>20\GeV.
@@ -179,11 +196,11 @@ The hadronic scattering processes are simulated at the LHC with a centre-of-mass
               p_{\rm T, miss} >  40\GeV\,.
             \end{align}
             %
-        \item QCD partons (light quarks and gluons) are clustered together using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp}, with distance parameter $R=0.4$.
+        \item QCD partons (light quarks and gluons) are clustered  using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp} with jet-resolution parameter $R=0.4$.
         We impose cuts on the jets' transverse momenta and rapidities,  
             \begin{align}
             \label{cut:3}
-             \ptsub{\Pj} >  30\GeV, \qquad |y_\Pj| < 4.0, 
+             \ptsub{\Pj} >  30\GeV, \qquad |y_\Pj| < 4.0. 
             \end{align}
             VBS cuts are applied on the two jets with largest transverse momentum, unless otherwise stated. In particular, we impose a cut on the 
              in\-vari\-ant mass of the di-jet system, as well as on the rapidity separation of the two jets and their separation from leptons,
@@ -198,55 +215,67 @@ The hadronic scattering processes are simulated at the LHC with a centre-of-mass
              \zeta = \text{min}\left[\text{min}\left(y_{\Pl_1},y_{\Pl_2}\right) - \text{min}\left(y_{\Pj_1},y_{\Pj_2}\right), \text{max}\left(y_{\Pj_1},y_{\Pj_2}\right) - \text{max}\left(y_{\Pl_1},y_{\Pl_2}\right)\right]> 0 .
             \end{align}
             
-        \item When EW corrections are computed, real photons and charged fermions are clustered together using the anti-$k_T$ algorithm with
+        \item When EW corrections are computed, real photons and charged fermions are clustered using the anti-$k_T$ algorithm with
             radius parameter $R=0.1$. In this case, leptons and quarks are understood as {\it dressed fermions}.
     \end{itemize}
 
-\section{Discussions}
+\section{Discussion}
 
-% \subsection{Standard Model}
 
-In this section we focus on the discussion of Standard Model predictions for the HL- and HE- LHC.
+In this section we focus on the discussion of Standard Model predictions for the HL and HE LHC.
 This entails both QCD and EW corrections that have been combined together.
 
-% The event selections used for the various signature is summed-up in Table XX.
-% The scale used is ...
-% The parton distribution functions used are...
-
-For VBS processes EW corrections are particularly large \cite{Biedermann:2016yds} and are therefore of prime importance.
-They originate from the exchange of massive gauge bosons in the virtual corrections.
-They tend to grow negatively large in the high-energy limit due to Sudakov logarithms.
+For VBS processes EW corrections are particularly large and therefore of prime importance.
+The leading contributions originate from the exchange of massive gauge bosons in the virtual corrections.
+They tend to grow large and negative in the high-energy limit owing to
+so-called Sudakov double logarithms.
 As shown in Ref.~\cite{Biedermann:2016yds}, large EW corrections are an intrinsic feature of VBS at the LHC.
-While this study was based on the same sign $\PW$ channel, the demonstration has been further confirmed by the computation of EW corrections to the $\PW\PZ$ channel.
+While this study is based on the same-sign $\PW$ channel, it
+has been further confirmed recently by the computation of large EW corrections to the $\PW\PZ$ channel \cite{SchwanTalk,dittmaieretla}.
 
-As these corrections are large and given the foreseen experimental precision, it is expected to actually measure such corrections.
-Because they involve all the interactions of the EW sector, measuring them would constitute a non-trivial test of the SM.
+Given their size and the foreseen experimental
+precision, these corrections are actually measurable.
+Because they involve interactions of the EW sector, their measurement would constitute a further test of the SM.
 On the left hand-side of Fig.~\ref{fig:ew}, the distribution in the invariant mass of the two leading jets is shown at LO and NLO EW for the process $\Pp\Pp \to \mu^+ \nu_{\mu} \Pe^+ \nu_{\Pe} \Pj\Pj$ at $14\TeV$.
-In addition, the band describes the expected statistical experimental uncertainty for a HL-LHC collecting $3000\fb^-1$ and represents a relative variation of $\pm1/N_{\rm obs}$ where $N_{\rm obs}$ is the number of observed events in each bin.
-It is thus clear that with the expected luminosity, one is expected to be experimentally sensitive to the VBS process but also to its EW corrections by themselves.
-
+The yellow band describes the expected statistical uncertainty for a
+HL LHC collecting $3000\fb^{-1}$ based on a relative variation of $\pm1/N_{\rm obs}$ where $N_{\rm obs}$ is the number of observed events in each bin.
+On the right hand-side for Fig.~\ref{fig:ew}, a similar plot for the absolute rapidity of the jet pair is shown.
+It is thus clear that with the expected luminosity, one is not only
+sensitive to the VBS process but also to its EW corrections.
+%
 \begin{figure}
 % \hspace{-2cm}
 \includegraphics[width=.5\textwidth]{{{Figures/histogram_invariant_mass_mjj12_rauch}}}
-\includegraphics[width=.5\textwidth]{{{Figures/histogram_invariant_mass_all}}}
+\includegraphics[width=.5\textwidth]{{{Figures/histogram_rapidity_j1j2}}}
 % \vspace*{-1em}
 \caption{
-Left: Differential distributions in the invariant mass of the two jets in $\Pp\Pp\to\mu^+\nu_\mu\Pe^+\nu_{\Pe}\Pj\Pj$ $14\TeV$ including NLO EW corrections (upper panel) and relative NLO EW corrections (lower panel)
-The yellow band describes the expected statistical experimental
+Differential distributions in the invariant mass of the two jets (left) and their rapidity (right)
+in $\Pp\Pp\to\mu^+\nu_\mu\Pe^+\nu_{\Pe}\Pj\Pj$ at $14\TeV$ including NLO EW corrections (upper panel) and relative NLO EW corrections (lower panel).
+The yellow band describes the expected statistical
 uncertainty for a high-luminosity LHC collecting $3000\fb^{-1}$ and
 represents a relative variation of $\pm 1/\sqrt{N_{\rm obs}}$ where $N_{\rm obs}$ is the number of observed events in each bin.
-Right: Differential distributions in the invariant mass of the visible system ($\Pe^+\mu^+\Pj\Pj$) in $\Pp\Pp\to\mu^+\nu_\mu\Pe^+\nu_{\Pe}\Pj\Pj$ at $27\TeV$ including NLO EW corrections (upper panel) and relative NLO EW corrections (lower panel).
 }
 \label{fig:ew}
 \end{figure}
 
-In Fig.~\ref{fig:ew}, the distribution in the invariant mass of the visible system ($\Pe^+\mu^+\Pj\Pj$) at $27\TeV$ is shown.
+\begin{figure}
+% \hspace{-2cm}
+\includegraphics[width=.5\textwidth]{{{Figures/histogram_invariant_mass_all_HL}}}
+\includegraphics[width=.5\textwidth]{{{Figures/histogram_invariant_mass_all_HE}}}
+% \vspace*{-1em}
+\caption{
+Differential distribution in the invariant mass of the visible system ($\Pe^+\mu^+\Pj\Pj$) in $\Pp\Pp\to\mu^+\nu_\mu\Pe^+\nu_{\Pe}\Pj\Pj$ at $14\TeV$ (left) and $27\TeV$ (right) including NLO EW corrections (upper panel) and relative NLO EW corrections (lower panel).
+}
+\label{fig:ew2}
+\end{figure}
+
+In Fig.~\ref{fig:ew2}, the distributions in the invariant mass of the visible system ($\Pe^+\mu^+\Pj\Pj$) at both $14\TeV$ (left) and $27\TeV$ (right) are shown.
 As expected, the corrections are larger for higher centre-of-mass energy due to the higher representative scale of the process.
-In the tail of the distribution where new physics could play an important role, the corrections are particularly large to reach almost $20\%$.
-% A resummation of the Sudakov logarithms would be necessary for such a centre-of-mass energy.
-Note that in the present predictions, the real radiation for massive gauge bosons is not taken into account.
-The cross sections for the two centre-of-mass energy at LO (using full matrix element) and NLO EW are given in Table \ref{tab:EWxsec}.
-In both cases the corrections are rather large in this fiducial volume.
+In the tail of the distribution where new physics could play an important role, the corrections are particularly large and reach about $25\%$ for the $27\TeV$ set-up.
+Note that in the present predictions, the real radiation of massive gauge bosons is not taken into account.
+These observations are further confirmed via the cross sections for the two centre-of-mass energies at LO (using full matrix element) and NLO EW given in Table \ref{tab:EWxsec}.
+At $27\TeV$ the EW corrections are few per cent larger than at $14\TeV$ ($-18.9\%$ against $-15.1\%$, respectively).
+Note that the jump in energy from $14\TeV$ to $27\TeV$ is accompanied by an increase by more than a factor 3 in the cross section at LO.
 
 \begin{table}
 \begin{center}
@@ -265,17 +294,11 @@ $27\TeV$ & $\phantom{1}4.7848(5)$ & $\phantom{1}3.881(7)$& $-18.9$
 %
 \end{tabular}
 \end{center}
-\caption{Cross sections at LO (order $\mathcal{O}\left(\alpha^6 \right)$) and NLO EW (order $\mathcal{O}\left(\alpha^7 \right)$) for $\Pp \Pp \to \mu^+ \nu_\mu \Pe^+ \nu_{\Pe} \Pj\Pj$ at both $14\TeV$ and $27\TeV$ at the LHC.
-The relative EW corrections are given in per cent and the digits in parenthesis indicates the integration error.}
+\caption{Cross sections at LO ($\mathcal{O}\left(\alpha^6 \right)$) and NLO EW ($\mathcal{O}\left(\alpha^7 \right)$) for $\Pp \Pp \to \mu^+ \nu_\mu \Pe^+ \nu_{\Pe} \Pj\Pj$ at both $14\TeV$ and $27\TeV$ at the LHC.
+The relative EW corrections are given in per cent, and the digits in parenthesis indicate the integration error.}
 \label{tab:EWxsec}
 \end{table}
 
-% \subsection{Beyond the Standard Model}
-% 
-% \MP{I left the set-up section for completeness but we should probably omit it in the final version}
-
-
-    
 \section*{Acknowledgements}
 
 AD and MP acknowledge financial support by the
