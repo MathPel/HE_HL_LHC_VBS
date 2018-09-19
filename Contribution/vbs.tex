@@ -59,7 +59,7 @@
 \author{
 Ansgar Denner$^{1\,}$\footnote{E-mail:
   \texttt{ansgar.denner@physik.uni-wuerzburg.de}},
-Mathieu Pellen$^{1\,, 2\,}$\footnote{E-mail:
+Mathieu Pellen$^{2\,}$\footnote{E-mail:
   \texttt{mathieu.pellen@physik.uni-wuerzburg.de}},
 Michael Rauch
 \\[9mm]
@@ -107,7 +107,7 @@ The QCD corrections are particularly important as they can significantly distort
 In addition, the inclusion of NLO QCD corrections reduces the theoretical uncertainties.
 The NLO EW corrections have been shown to be very large for VBS processes \cite{Biedermann:2016yds} and even the dominating NLO contribution for same-sign WW scattering \cite{Biedermann:2017bss}.
 
-In this study, the NLO QCD corrections have been obtained based on Refs.~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} in the so-called VBS approximation \cite{Oleari:2003tc,Denner:2012dz,Ballestrero:2018anz}.
+In this study, the NLO QCD corrections have been obtained from VBFNLO based on Refs.~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} in the so-called VBS approximation \cite{Oleari:2003tc,Denner:2012dz,Ballestrero:2018anz}.
 The NLO EW corrections have been obtained from {\sc MoCaNLO+Recola}
 \cite{Bendavid:2018nar,Actis:2016mpe,Actis:2016mpe} based on a
 full NLO computation \cite{Biedermann:2017bss}.
@@ -161,12 +161,12 @@ The hadronic scattering processes are simulated at the LHC with a centre-of-mass
     \end{equation}
     %
     and $M_V^2$ corresponds to the real part of the squared pole mass.
-    The numerical value of $\alpha$ corresponding to this choice of input parameters is
-    %
-    \begin{equation}
-     1/\alpha = 132.3572\ldots\,.
-    \end{equation}
-    The Cabibbo--Kobayashi--Maskawa matrix is assumed to be diagonal, meaning that the mixing between different quark generations is neglected.
+%     The numerical value of $\alpha$ corresponding to this choice of input parameters is
+%     %
+%     \begin{equation}
+%      1/\alpha = 132.3572\ldots\,.
+%     \end{equation}
+%     The Cabibbo--Kobayashi--Maskawa matrix is assumed to be diagonal, meaning that the mixing between different quark generations is neglected.
     The complex-mass scheme~\cite{Denner:1999gp,Denner:2005fg,Denner:2006ic} is used throughout to treat unstable intermediate particles in a gauge-invariant manner.
 
     The central value of the renormalisation and factorisation scales is set to 
@@ -197,25 +197,25 @@ The hadronic scattering processes are simulated at the LHC with a centre-of-mass
             \end{align}
             %
         \item QCD partons (light quarks and gluons) are clustered  using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp} with jet-resolution parameter $R=0.4$.
-        We impose cuts on the jets' transverse momenta and rapidities,  
+        Cuts on the jets' transverse momenta and rapidities are imposed,  
             \begin{align}
             \label{cut:3}
              \ptsub{\Pj} >  30\GeV, \qquad |y_\Pj| < 4.0. 
             \end{align}
-            VBS cuts are applied on the two jets with largest transverse momentum, unless otherwise stated. In particular, we impose a cut on the 
+            VBS cuts are applied on the two jets with largest transverse momentum. In particular, we impose a cut on the 
              in\-vari\-ant mass of the di-jet system, as well as on the rapidity separation of the two jets and their separation from leptons,
             \begin{align}
             \label{cut:4}
              m_{\Pj \Pj} >  500\GeV,\qquad |\Delta y_{\Pj \Pj}| > 2.5, \qquad \Delta R_{\Pj\Pl} > 0.3 .
             \end{align}
             %
-        \item Finally, the centrality of the leptons is enforced as defined in Ref.~\cite{ATL-PHYS-PUB-2017-023}:
+        \item Finally, the centrality of the leptons is enforced according to Ref.~\cite{ATL-PHYS-PUB-2017-023}:
             \begin{align}
             \label{cut:5}
              \zeta = \text{min}\left[\text{min}\left(y_{\Pl_1},y_{\Pl_2}\right) - \text{min}\left(y_{\Pj_1},y_{\Pj_2}\right), \text{max}\left(y_{\Pj_1},y_{\Pj_2}\right) - \text{max}\left(y_{\Pl_1},y_{\Pl_2}\right)\right]> 0 .
             \end{align}
             
-        \item When EW corrections are computed, real photons and charged fermions are clustered using the anti-$k_T$ algorithm with
+        \item For EW corrections, real photons and charged fermions are clustered using the anti-$k_T$ algorithm with
             radius parameter $R=0.1$. In this case, leptons and quarks are understood as {\it dressed fermions}.
     \end{itemize}
 
